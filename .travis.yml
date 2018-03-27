@@ -5,4 +5,4 @@ before_install:
   - docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD"
 after_success:
   - docker build -t internetofdrums/website .
-  - docker push internetofdrums/internet-drum-pattern-queue-client
+  - docker push internetofdrums/website
