@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    image: "internetofdrums/website:latest"
+    ports: "80:80"
+  service:
+    image: "internetofdrums/internet-drum-pattern-queue-client:latest"
+    ports: "80:9000"
+  client:
+    image: "internetofdrums/internet-drum-pattern-queue-service:latest"
+    ports: "8080:8080"
